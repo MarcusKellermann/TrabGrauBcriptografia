@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificação e Decodificação de Erros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Codificação e Decodificação de Erros</h1>
+
+        <div class="form-group">
+            <label for="input">Insira os símbolos (binários):</label>
+            <input type="text" id="input" placeholder="Ex: 101, 110">
+        </div>
+
+        <div class="form-group">
+            <label for="method">Escolha o método:</label>
+            <select id="method">
+                <option value="repetition">Código de Repetição</option>
+                <option value="hamming">Código de Hamming (7,4)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="operation">Escolha a operação:</label>
+            <select id="operation">
+                <option value="encode">Codificar</option>
+                <option value="decode">Decodificar</option>
+            </select>
+        </div>
+
+        <button onclick="processData()">Processar</button>
+
+        <h3>Resultado:</h3>
+        <div id="output"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
